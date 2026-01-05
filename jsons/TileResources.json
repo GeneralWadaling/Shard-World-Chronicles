@@ -2,7 +2,7 @@
 	//City level abstracts
 
 	{
-		"name": "Housing",
+		"name": "Stability",
 		"resourceType": "Bonus",
 		"uniques":[
 			"City-level resource",
@@ -10,10 +10,10 @@
 		],
 		"civilopediaText": [
 			{
-				"text": "Indicates number of available housing."
+				"text": "Indicates local stability. It is increased by governmental and policing buildings, but can be decreased by nationwide unhappiness."
 			}
 			{
-				"text": "Population growth is halved in the city if the housing is near depletion, quartered if overcrowded, nullified if too full"
+				"text": "When stability is 5 less than number of local population, penalities would start to apply on the city, and will spawn rebellion when 10 less than population."
 			}
 		]
 	},
@@ -44,7 +44,7 @@
 		]
 	},
 	{
-		"name": "Infrastructure Slot",
+		"name": "Squalor",
 		"resourceType": "Bonus",
 		"uniques":[
 			"City-level resource",
@@ -52,28 +52,15 @@
 		],
 		"civilopediaText": [
 			{
-				"text": "Indicates number of Infrastructure buildings you can build in this city."
-			}
-		]
-	},
-	{
-		"name": "Pollution",
-		"resourceType": "Bonus",
-		"uniques":[
-			"City-level resource",
-			"Excluded from map editor",
-		],
-		"civilopediaText": [
-			{
-				"text": "Abstract counter for city pollution."
+				"text": "Abstract counter for city pollution. Commonly caused by industry. Cities that built adjacent or onto blighted terrain ([Wasteland] [Shardland]) also adds squalor."
 			},
 			{
-				"text": "Insufficient healthcare will cause food consumption penalties."
+				"text": "High [Squalor] causes disease and decreases stability."
 			},
 		]
 	},
 	{
-		"name": "Health",
+		"name": "Population Health",
 		"resourceType": "Bonus",
 		"uniques":[
 			"City-level resource",
@@ -81,10 +68,10 @@
 		],
 		"civilopediaText": [
 			{
-				"text": "Abstract counter for public health. Default level is 5."
+				"text": "Abstract counter indicating local public health status."
 			},
 			{
-				"text": "Every 4 population demands 1 Health. Insufficient healthcare will cause food consumption penalties. The line of insifficient healthcare is increased by pollution."
+				"text": "Poor healthcare status ([Population Health] is 10 less than population) causes population growth penalties and decreases overall productivity."
 			},
 		]
 	},
@@ -103,65 +90,29 @@
 	},
 
 	//Nationwide abstracts
-	{
-		"name": "Infamy",
+		{
+			"name": "Reputation",
+			"resourceType": "Strategic",
+			"uniques":[
+				"Stockpiled",
+				"Excluded from map editor",
+			],
+					"civilopediaText": [
+				{
+					"text": "Reflects prestige and infamy status."
+				},
+			]
+		},
+		{
+		"name": "Influence",
 		"resourceType": "Strategic",
 		"uniques":[
 			"Stockpiled",
 			"Excluded from map editor",
 		],
-	},
-	{
-		"name": "Storm Indicator",
-		"resourceType": "Strategic",
-		"uniques":[
-			"Excluded from map editor",
-		],
-		"civilopediaText": [
+				"civilopediaText": [
 			{
-				"text": "The Ashen Catastrophe has not only destroyed our civilization, it has also altered the global climate of the Old World as well. The 'Blight Storm' is one of the outcome of the Catastrophe, regularly occuring in cycles that each cycle spans several decades long and a storm season can last years. During a storm season, the world becomes shrouded by thick layers of clouds, hiding lands from sunlight in most of the time, hindering visibility; turbulent windstorms making navigation and movement difficult. What's worse is that the storm also brings up trace amounts of toxic Ashen particles from the wastelands and scatter them into the air, not only destructive to natural food supplies and posing challenges to health of our population, but it also agitates feral mutants and making them even more dangerous."
-			},
-			{
-				"seperator": true,
-			},
-			{
-				"text": "When above 0, it indicates the current time is a Blight Storm season. The detailed list of effects are shown as below:"
-			},
-			{
-				"seperator": true,
-			},
-			{
-				"text": "District tile yields other than [Storm Borough] and [City center] suffers 25% yield penalties.",
-        			"link": "Tile Improvements/Storm Borough",
-			},
-			{
-				"text": "[-2 Food] yields in all tiles. [Hydroponic Farm] reduces its effect on [Farmland], while [Agriwell] is completely immune to storm.",
-        			"link": "Buildings/Hydroponic Farm",
-			},
-			{
-				"text": "[-1 Production] yields in all tiles.",
-			},
-			{
-				"text": "[-1 Gold] yields in all tiles.",
-			},
-			{
-				"text": "+20% unhappiness in all cities.",
-			},
-			{
-				"text": "-10% strength for all cities.",
-			},
-			{
-				"text": "Cities gain 3 [Pollutuion].",
-        			"link": "Resources/Pollutuion",
-			},
-			{
-				"text": "Aircraft units are grounded and cannot attack or move.",
-			},
-			{
-				"text": "Land and water units have reduced vision and movement.",
-			},
-			{
-				"text": "Units heal slower outside urban tiles.",
+				"text": "Reflects influence and power over domestic affairs. Consumed by special political actions."
 			},
 		]
 	},
