@@ -41,6 +41,7 @@
 		"uniques": [
 			"Blighted",
 			"Occurs at temperature between [-1] and [1] and humidity between [0.2] and [0.3]",
+			"A Region is formed with at least [30]% [Wasteland] tiles and [Shardland] tiles, with priority [2]",
 			"Units ending their turn on this terrain take [10] damage",
 			"[+1] to Fertility for Map Generation",
 			"Occurs in groups of [3] to [8] tiles",
@@ -238,6 +239,7 @@
 		"uniques": [
 			"Rough terrain", "Rare Feature",
 			"Blocks line-of-sight from tiles at same elevation",
+			"Occurs in groups of [1] to [3] tiles",
 			"[25]% Chance to be destroyed by nukes",
 			"Considered [Undesirable] when determining start locations",
 			"Every [39] tiles with this terrain will receive a major deposit of a strategic resource."
