@@ -342,7 +342,7 @@
 		"overrideStats": false,
 		"unbuildable": true,
 		"defenceBonus": 0.25,
-		"occursOn": ["Plains","Barrens"],
+		"occursOn": ["Plains","Barrens","Tundra"],
 		"uniques": [
 			"Rough terrain", "Rare feature",
 			"Blocks line-of-sight from tiles at same elevation",
