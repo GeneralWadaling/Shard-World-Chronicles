@@ -47,7 +47,7 @@
 			"Every [16] tiles with this terrain will receive a major deposit of a strategic resource.",
 			"Considered [Undesirable] when determining start locations",
 		],
-		"RGB": [184,186,222],
+		"RGB": [57, 62, 74],
 	},
 	{
 		"name": "Shardland",
@@ -62,7 +62,7 @@
 			"Every [13] tiles with this terrain will receive a major deposit of a strategic resource.",
 			"Considered [Undesirable] when determining start locations",
 		],
-		"RGB": [168,155,168],
+		"RGB": [125, 44, 94],
 	},
 	{
 		"name": "Rift",
@@ -81,6 +81,7 @@
 			"Blocks line-of-sight from tiles at same elevation",
 			"Considered [Undesirable] when determining start locations",
 		],
+		"RGB": [214, 86, 0],
 		"defenceBonus": -0.25,
 	},
 	{
@@ -225,6 +226,24 @@
 			"Every [22] tiles with this terrain will receive a major deposit of a strategic resource."
 		],
 	},
+	/*
+	{
+		"name": "Growth",
+		"type": "TerrainFeature",
+		"movementCost": 2,
+		"overrideStats": false,
+		"unbuildable": true,
+		"defenceBonus": 0.25,
+		"occursOn": ["Wasteland", "Shardland"],
+		"uniques": [
+			"Rough terrain", "Rare Feature",
+			"Blocks line-of-sight from tiles at same elevation",
+			"[25]% Chance to be destroyed by nukes",
+			"Considered [Undesirable] when determining start locations",
+			"Every [39] tiles with this terrain will receive a major deposit of a strategic resource."
+		],
+	},
+	*/
 	{
 		"name": "Withered Woodland",
 		"type": "TerrainFeature",
@@ -233,7 +252,7 @@
 		"overrideStats": false,
 		"unbuildable": true,
 		"defenceBonus": 0.25,
-		"occursOn": ["Tundra","Barrens","Plains","Hill"],
+		"occursOn": ["Tundra","Barrens","Plains","Hill", "Wasteland"],
 		"uniques": [
 			"Rough terrain", "Vegetation",
 			"[-1 Production] <in [Hill] tiles>",
